@@ -1,0 +1,35 @@
+.elementList {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 90vh;
+  overflow: auto;
+
+  div {
+    @include flexbox;
+    flex-basis: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 5%;
+
+    .removeButton {
+      color: dimgrey;
+      position: absolute;
+      right: 5%;
+      top: 5%;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1em;
+
+      span {
+        font-weight: bold;
+        border-bottom: 1px dotted grey;
+      }
+    }
+  }
+
+}

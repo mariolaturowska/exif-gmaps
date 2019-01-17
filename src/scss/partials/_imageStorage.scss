@@ -1,0 +1,15 @@
+.wrapper {
+  @include flexbox;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .imageWrapper {
+    width: 20vw;
+    @include flexbox;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+}
